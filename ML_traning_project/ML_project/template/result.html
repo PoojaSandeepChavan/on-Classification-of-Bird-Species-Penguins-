@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body{
+              
+            font-family: Arial, Helvetica, sans-serif;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            background-color:rgba(97, 133, 232, 0.7);
+            margin-top: 5%;
+            height:750px;
+            margin: auto;
+            width: 100%;
+            background-image: url(../static/Adélie-Chinstrap-and-gentoo-penguin-species.jpg);
+
+        }
+        
+      P{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 30%;
+        color:rgba(22, 32, 36, 0.829);
+        background-color: rgb(148, 211, 211);
+        border-radius: 30px;
+        text-decoration: solid;
+        font-size: 70px;
+        font-weight: bold;
+      }
+
+
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const slideCount = slides.length;
+    let index = 0;
+
+    function showSlide() {
+        slides.forEach((slide) => {
+            slide.style.transform = `translateX(${-index * 100}%)`;
+        });
+    }
+
+    function nextSlide() {
+        index = (index + 1) % slideCount;
+        showSlide();
+    }
+
+    function prevSlide() {
+        index = (index - 1 + slideCount) % slideCount;
+        showSlide();
+    }
+
+    setInterval(nextSlide, 3000); // Auto-advance to next slide every 3 seconds
+});
+
+
+    </script>
+</head>
+<body>
+<div class="b1">
+    <p>&nbsp;&nbsp;Showing Prediction: {{result}}</p>
+    
+    
+</div>
+
+</body>
+</html>

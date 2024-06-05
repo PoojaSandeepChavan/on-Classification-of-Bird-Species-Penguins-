@@ -1,0 +1,145 @@
+.body {
+   
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+.b1{
+height:750px;
+margin: auto;
+width: 100%;
+background-image: linear-gradient(rgba(97, 133, 232, 0.7),rgba(159, 214, 215, 0.7)),url(1.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+P{
+margin-left: 15%;
+margin-top: 13%;
+color:rgba(14, 149, 198, 0.829);
+text-decoration-color: rgba(14, 149, 198, 0.829);
+text-decoration: solid;
+font-size: 100px;
+font-weight: bold;
+}
+
+.highlighted {
+text-shadow: black;
+color: rgb(29, 159, 180);
+}
+
+.navbar {
+margin-top:0 ;
+margin-left: 30%;
+overflow: hidden;
+background-color: #ffffff00;
+font-family: 'Times New Roman';
+
+
+}
+
+.navbar a {
+float: left;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+font-size: 30px;
+text-decoration: none;
+}
+
+.navbar a:hover {
+background-color: #fbf5f500;
+color: black;
+text-decoration: underline;
+}
+#b3{
+height:750px;
+margin: auto;
+width: 100%;
+background-image:url(penguin_2.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+margin-top: 1%;
+}
+
+#b2{
+height:750px;
+    margin: 0;
+    background-color: #ddd;
+}
+h1{
+color:#228B22;
+font-size:50px;
+text-shadow: 3px 3px 5px white;
+
+}
+h2{
+font-family: Arial, Helvetica, sans-serif;
+color:#236e9d;
+font-size:50px;
+text-shadow: 3px 3px 5px white;
+
+}
+
+
+.registerbtn {
+height: 50px; 
+width: 25%;
+padding: 10px 30px;
+cursor: pointer;
+display: block;
+margin: auto;
+background: linear-gradient(to right, #2b9496,#3db9df);
+border: 0;
+outline: none;
+border-radius: 30px;
+
+
+}
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+.registerbtn:hover {
+opacity: 1;
+}
+input[type=number]{
+width: 35%;
+padding: 20px;
+margin: 10px 0 22px 0;
+display: inline-block;
+border: solid 1px;
+
+background: #f1f1f1;
+}
+
+input[type=number]:focus {
+background-color: #ddd;
+outline: none;
+}
+.input-field{
+padding: 10px 30px;
+cursor: pointer;
+display: block;
+margin: auto;
+
+border: 0;
+outline: none;
+border-radius: 30px;
+}
+.input{
+padding: 10px 30px;
+width: 17%;
+
+margin:auto;
+
+border: 1;
+outline: none;
+border-radius: 30px;
+}

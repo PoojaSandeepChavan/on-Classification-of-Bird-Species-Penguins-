@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    
+</head>
+    <body>
+      <div class="b1">
+
+        <div class="navbar">
+          <a href="#Home">Home</a>
+          <a href="#b3">Penguins information</a>
+          <a href="#b2">Prediction</a>
+          
+        </div>
+        <p>Classification of<span class="highlighted"><br>Penguins</span></p>
+        </p></div>
+      </div>
+      <div id="b3">
+        <h2>Penguins information</h2>
+       
+      </div>
+        <br>
+
+        <div id="b2">
+          <form action='showresult' method='post'>{%csrf_token%}
+              
+            <center><h2>Prediction</h2></center>
+    
+              <center>Culmenlength:&nbsp;&nbsp;<input type='number' class="input-field" step="0.00001" placeholder='Enter culmen_length_mm	' name='P' min="32.10001" max="59.60001"><br>
+              Culmen depth:&nbsp;&nbsp;<input type='number' class="input-field"step="0.00001" placeholder='Enter culmen_depth_mm' name='K' min="13.10001" max="21.50000"><br>
+              Flipper length:&nbsp;&nbsp;<input type='number' class="input-field" step="0.00001" placeholder='Enter flipper_length_mm' name='T' min="172.00001" max="231.00000"><br>
+              Body mass :&nbsp;&nbsp;<input type='number' class="input-field" step="0.00001" placeholder='Enter body_mass_g	' name='H' min="2700.00000" max="6300.00000"><br>
+              
+              Enter Island:
+              <select id="Island" class="input" name="Island">
+                <option value="2">Torgersen</option>
+                <option value="0">Biscoe</option>
+                <option value="1">Dream</option> 
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+              <label for="Sex">Sex:</label>
+              <select id="Sex" class ="input" name="Sex">
+                <option value="2">Male</option>
+                <option value="1">Female</option>
+      
+              </select><br><br><br><br><br>
+            </center>
+              <center><button type='submit' class='registerbtn'>submit</button></center>
+          </form>
+        </div>
+      
+
+      
+      {% block body %}
+      {% endblock %}
+    </body>
+</html>
